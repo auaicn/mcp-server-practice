@@ -66,6 +66,7 @@ This repository will contain various MCP server implementations and examples as 
 ## Resources
 
 - [Official MCP Documentation](https://modelcontextprotocol.io/)
+  - [debugging documentation](https://modelcontextprotocol.io/docs/tools/debugging)
 - [MCP GitHub Repository](https://github.com/modelcontextprotocol)
 - [MCP Specification](https://spec.modelcontextprotocol.io/)
 
