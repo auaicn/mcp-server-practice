@@ -22,6 +22,30 @@ To begin practicing with MCP servers, you'll need:
 3. Basic understanding of JSON-RPC protocols
 4. Knowledge of the programming language you'll be using
 
+### Requirements
+
+- python 3.12 (or higher)
+
+### make venv
+
+```
+python3 -m venv .venv
+```
+
+### enable python virtial env
+
+```
+source .venv/bin/activate
+```
+ 
+shell 영역에 (venv) 가 보이는 것을 확인하자. 
+
+### disable python virtual env
+
+```
+deactivate
+```
+
 ## Project Structure
 
 This repository will contain various MCP server implementations and examples as you progress through your learning journey.
