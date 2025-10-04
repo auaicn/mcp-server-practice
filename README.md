@@ -69,6 +69,14 @@ pip freeze > requirements.txt
 
 This repository will contain various MCP server implementations and examples as you progress through your learning journey.
 
+### FAQS
+
+- (case of Apple Silicon MacOS) claude logs are located under 
+
+```
+~/Library/Logs/Claude
+```
+
 ## Resources
 
 - [Official MCP Documentation](https://modelcontextprotocol.io/)
