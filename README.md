@@ -24,7 +24,12 @@ To begin practicing with MCP servers, you'll need:
 
 ### Requirements
 
+
 - python 3.12 (or higher)
+  - to use mcp, python 3.12 or higher version is required.
+  - see also this file. [pyproject.toml](pyproject.toml)
+
+## venv
 
 ### make venv
 
@@ -44,6 +49,14 @@ shell 영역에 (venv) 가 보이는 것을 확인하자.
 
 ```
 deactivate
+```
+
+### requirements.txt
+
+after enabling python virtual env, use this command
+
+```
+pip install -r requirements.txt
 ```
 
 ## Project Structure
