@@ -59,6 +59,12 @@ after enabling python virtual env, use this command
 pip install -r requirements.txt
 ```
 
+if you have changes about package dependencies, you may update requirements.txt using
+
+```
+pip freeze > requirements.txt
+```
+
 ## Project Structure
 
 This repository will contain various MCP server implementations and examples as you progress through your learning journey.
