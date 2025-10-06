@@ -6,26 +6,25 @@ mcp = FastMCP(name="data_extractor")
 def extract_data(
     target: str,
     data_type: str,
-    output_format: str = "csv"  # 기본값도 가능
 ) -> str:
     """
-    연결 대상, 추출할 데이터, 출력 형식을 받아서
-    추출 지시문을 생성합니다.
+    기업명, 조사할 데이터를 받아서 데이터를 출력합니다.
     """
-    if output_format.lower() not in ("csv", "excel", "pdf"):
-        return "출력 형식은 csv, excel, pdf 중 하나를 선택해주세요."
 
     return f"""
 다음 조건으로 데이터를 추출해주세요:
 
 - 연결 대상: {target}
 - 추출 데이터: {data_type}
-- 출력 형식: {output_format.upper()}
 
 실행 시 다음과 같은 절차를 따릅니다.
-1. '{target}'에 연결합니다.
-2. '{data_type}' 데이터를 조회합니다.
-3. 결과를 '{output_format.upper()}' 형식으로 내보냅니다.
+- https://finance.naver.com/ 에서 데이터를 찾습니다.
+- '{target}' 를 기업명으로 검색합니다.
+- '{data_type}' 데이터를 조회합니다. 기본적으로 순 자본금등을 표로 정리하여 제시합니다.
+- 삼성전자, 네이버 등 대표적인 국내 기업 평군과 비교가 필요하고
+- 애플, 엔비디아 등의 해외기업과 비교가 필요합니다.
+- 데이터는 표로 정리하여 제시합니다.
+- 데이터는 최신 데이터를 제시합니다.
 """
 
 if __name__ == "__main__":
